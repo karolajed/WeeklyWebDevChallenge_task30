@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#top {
+  background-image: url(img/header.jpg);
+  height: 100%;
+  font-weight: 100;
+  padding-top: 181px;
+  background-size: cover;
+  position: relative;
+}
