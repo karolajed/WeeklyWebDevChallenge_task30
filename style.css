@@ -3,6 +3,7 @@ body {
   padding: 0;
   font-family: 'Roboto', sans-serif;
   background-color: #EFEEE9;
+  box-sizing: border-box;
 }
 
 
@@ -14,7 +15,7 @@ nav {
   width: 100%; 
   font-size: 10px;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: .5em;
   background-color: rgba(255, 255, 255, 0.5);
   list-style-type: none;
   display: flex;
@@ -22,17 +23,17 @@ nav {
   justify-content: center;
   align-items: center;
   height: 5em;
-    -o-transition: height .5s;
+  -o-transition: height .5s;
   -ms-transition: height .5s;
   -moz-transition: height .5s;
   -webkit-transition: height .5s;
-  transition: height .5s linear;
+  transition: height .5s ease;
 }
 
 nav a {
   color: black;
   text-decoration: none;
-  margin: 10px;
+  margin: 1em;
 }
 
 #logo {
@@ -43,11 +44,12 @@ nav:hover {
   height: 10em;
 }
 
+
 /* SECTION  1 */
 
 #top {
   background-image: url(img/header.jpg);
-  height: 600px;
+  height: 700px;
   font-weight: 100;
   background-size: cover;
   display: flex;
@@ -57,6 +59,7 @@ nav:hover {
 }
 
 #top-text {
+  font-size: 1em;
   text-align: right;
   max-width: 30%;
   padding-right: 20%;
@@ -67,6 +70,170 @@ nav:hover {
 /* SECTION 2 */
 
 #view {
-  height: 600px;
+  height: 700px;
   background-color: #EFEEE9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.view-project {
+  height: 70%;
+  width: 70%;
+  padding-bottom: 1em;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.view-project h1 {
+  font-family: 'Sumana', serif;
+  text-transform: uppercase;
+  color: dimgrey;
+  letter-spacing: .5em;
+}
+
+.view-project p {
+  padding: 2em;
+  width: 70%;
+}
+
+.view-project button {
+  background-color: transparent;
+  border: 2px solid #000000;
+  display: inline-block;
+  cursor: pointer;
+  font-weight: 700;
+  color: #000;
+  font-size: 1em;
+  text-transform: uppercase;
+  padding: 6px 24px;
+  text-decoration: none;
+  height: 3em;
+}
+
+
+/* SECTION  3 */
+
+#portfolio {
+  background-color: #fff;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: stretch;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-portfolio {
+  max-width: 33.33%;
+  height: auto;
+}
+
+
+/* SECTION 4 */
+
+#quote {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote p {
+  color: dimgrey;
+  font-size: 2em;
+  font-weight: 200;
+  width: 50%;
+}
+
+
+/* SECTION 5 */
+
+#paragraphs {
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: #fff;
+}
+
+#paragraphs img {
+  max-width: 50%;
+  height: auto;
+  flex 1;
+}
+
+.moonspeak-paragraphs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+.paragraph {
+  width: 17em;
+  padding: 2em 0 0 7em;
+  color: #989696;
+}
+
+.paragraph h2 {
+  font-size: .9em;
+  text-transform: uppercase;
+  letter-spacing: .3em;
+}
+
+.paragraph p {
+  font-size: .7em;
+}
+
+
+/* SECTION 6 */
+
+#articles {
+  background-color: #EFEEE9;
+  height: 450px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.article {
+  margin: 1em 1em 1em 1em;
+  background-color: #fff;
+  width: 20%;
+  height: 70%;
+  text-align: center;
+}
+
+.article-text {
+  margin: 1.7em;
+}
+
+.article-text h3 {
+  font-size: .9em;
+  color: #000;
+}
+
+.article-text p, .article-text a {
+  font-size: .7em;
+}
+
+.article-text p {
+  color: #989696
+}
+
+.article-text a {
+  color: #459bc1;
 }
